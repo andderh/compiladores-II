@@ -1,0 +1,23 @@
+program nome2
+{exemplo2}
+var a: real;
+var b:integer;
+procedure nomep(x:real; b:integer)
+var a,c:integer;
+begin
+read(c,a);
+if a < x + c then
+    a:= c+a+x;
+    write(a)
+else c:=a+x
+$
+end;
+procedure nomek(b:integer; a: real)
+begin
+ a:= b;
+ nomek(b)
+end
+begin{programa principal}
+read(b);
+nomep(b)
+end.
